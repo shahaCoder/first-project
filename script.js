@@ -1,5 +1,6 @@
 // Задание 1,нужно создать мини банкомат
-let personName = prompt("Как вас зовут?")
+
+/*let personName = prompt("Как вас зовут?")
 let money = 10000
 let account = 7777
   if (personName === "Alex" || personName[0] == "a") {
@@ -18,7 +19,7 @@ let account = 7777
   } else{
       alert(`Пользовател с именем ${personName} не существует`)
   }
-
+*/
 
 
 
@@ -27,7 +28,8 @@ let account = 7777
 // Задание 2,написать программу которая будет проверять на правильность имени и подсчитвать числа
 let howManyPeople = prompt("Здравствуйте,сколько людей хотят зайти в клуб?")
 let busyPlaces = prompt("Сколько занято мест?")
-if(howManyPeople > 0 && howManyPeople < 10 && busyPlaces > 0 && busyPlaces < 11){
+let overAll = howManyPeople + busyPlaces 
+if(overAll < 10){
     let name = prompt("Как вас зовут?");
     if (name[0] == "A" || name[0] == "a"){
         let age = +prompt(`Отлично ${name} а теперь,можете написать сколько вам лет?`)
